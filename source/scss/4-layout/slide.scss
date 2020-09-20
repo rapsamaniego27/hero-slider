@@ -6,6 +6,10 @@
  @media #{$device-md}{
   max-width:460px !important;
  }
+
+ @media #{$device-sm}{
+  max-width:320px !important;
+ }
 }
 
 .slide{
@@ -20,6 +24,11 @@
  flex-direction:column;
  justify-content:space-between;
  position:relative;
+
+ @media #{$device-sm}{
+  max-width:280px;
+  margin: 5px 20px;
+ }
 
 }
 
@@ -43,9 +52,14 @@
    align-items: center;
    color:var(--secondary);
    box-shadow: 0 0 3px 3px rgba(0,0,0,0.2);
-   font-size:26px;
+   font-size:24px;
    position:absolute;
    top:35%;
+
+   @media #{$device-sm}{
+     height:46px;
+     width:46px;
+   }
   }
 
   #btnPrev{
@@ -54,7 +68,7 @@
 
   @media only screen and (max-width:1366px){
      left: 17%;
-     top:50%;
+     top:60%;
    }
    @media #{$device-md}{
      left: 7%;
@@ -66,7 +80,7 @@
 
   @media only screen and (max-width:1366px){
      right: 17%;
-     top:50%;
+     top:60%;
    }
    @media #{$device-md}{
      right: 7%;
