@@ -1,5 +1,15 @@
 /* Code javascript here */
-const slider = new Dulas({
+
+window.addEventListener('DOMContentLoaded', ()=> {
+  const data = new Data();
+
+  data.generateSlides();
+
+});
+
+
+setTimeout(() => {
+ const slider = new Dulas({
  sliderEl: document.querySelector('.slide-row'),
 
  controls: {
@@ -7,5 +17,7 @@ const slider = new Dulas({
   prevEl: document.querySelector('#btnPrev')
  },
  autoplay: false,
-
+ slidesToScroll: 2
 });
+
+}, 1000);

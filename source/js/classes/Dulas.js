@@ -29,7 +29,6 @@ class Dulas {
    
   firstSlide = (firstSlide > 1) ? 3 : 1;
 
-
     slides[firstSlide].classList.add('dulas--current');
 
     //Sets the overall width of Slide track based on how many slides there
@@ -69,7 +68,7 @@ class Dulas {
      
      case 2:
         const firstThreeSlides = slides.slice(0, 3);
-        const lastThreeSlides = slides.slice(-3);
+        const lastThreeSlides = slides.slice(-3).reverse();
 
         this.appendClonedSlides(firstThreeSlides, 'last');
         this.appendClonedSlides(lastThreeSlides, 'first');
@@ -87,7 +86,7 @@ class Dulas {
 
  /* For Cloning more than 1 */
  appendClonedSlides(slides, location){
-
+    console.log(slides);
     slides.forEach((slide, index) => {
       
        // the captured clone in the loop
@@ -104,15 +103,16 @@ class Dulas {
          
           if (index == 0 ? clone.classList.add('dulas--last') : '');
        }
-
+;
     /* Appends before the the Slide Track */
        if (location == 'first'){
-          this.slideTrack.insertBefore(clone, slides[0]);
+          this.slideTrack.prepend(clone);
 
-          if (index == 2 ? clone.classList.add('dulas--first') : '');
+          if (index == 0 ? clone.classList.add('dulas--first') : '');
        }
 
     });
+
     
  }
 
@@ -122,6 +122,10 @@ class Dulas {
   this.controls.nextEl.addEventListener('click', (e) => {
    e.preventDefault();
    this.counter++;
+     /* this.counter = (this.slidesToScroll > 1) ?
+        this.counter + this.slidesToScroll :
+        this.counter++; */
+
    this.gotoSlide(this.counter);
 
    this.newSlides[this.counter].classList.add('dulas--current');
@@ -159,6 +163,9 @@ class Dulas {
  gotoSlide(i) {
   //slider element multiplies by any integer
   //in this case the counter variable we use
+
+  const basisWidth = (this.slidesToScroll > 1) ? this.newSlides[0].clientWidth : this.sliderEl.clientWidth;
+
   this.slideTrack.style.transform = `translate3d(-${this.sliderEl.clientWidth * i}px, 0, 0)`;
 
   //The animation of the sliding
