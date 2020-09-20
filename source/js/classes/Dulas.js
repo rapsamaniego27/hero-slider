@@ -34,6 +34,7 @@ class Dulas {
    
   firstSlide = (firstSlide > 1) ? 3 : 1;
 
+   
     slides[firstSlide].classList.add('dulas--current');
 
     //Sets the overall width of Slide track based on how many slides there

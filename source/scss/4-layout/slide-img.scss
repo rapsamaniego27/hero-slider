@@ -7,5 +7,17 @@
 
  .slide-img{
   object-fit: contain;
+  width:70%;
+   @media #{$device-md}{
+    width:50%;
+    margin:0 auto;
+  }
  }
+
+ @media #{$device-md}{
+    width:100%;
+    margin:0 auto;
+  }
+
+
 }

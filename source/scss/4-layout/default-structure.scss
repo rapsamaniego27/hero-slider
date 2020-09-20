@@ -4,15 +4,20 @@
   height: 100%;
 }
 
+body{
+   background: var(--dark);
+}
+
 #main{
   flex: 1 0 auto;
-  background: var(--accent);
 }
 
 .title{
   color:var(--yellow);
   text-align:center;
-  margin: 2vh 0;
+  letter-spacing: 2px;
+  max-width:70%;
+  margin:2vh auto;
 }
 
 footer{

@@ -1,11 +1,15 @@
 .slide-skills__container{
- margin:30px 30px 0 30px;
+ margin:30px 25px 0 25px;
  display:flex;
  justify-content:space-between;
  align-items: center;
 
  .skill{
-  width:60px;
+  width:50px;
   height:auto;
+
+  @media #{$device-md}{
+   width:40px;
+  }
  }
 }

@@ -14,7 +14,7 @@
  },
  {
   "name": "RUBICK",
-  "blurb": "Any mage can cast a spell or two, and a few may even study long enough to become a wizard, but only the most talented are allowed to be recognized as a Magus. Yet as with any sorcerers circle, a sense of community has never guaranteed competitive courtesy.",
+  "blurb": "Any mage can cast a spell or two, and a few may even study long enough to become a wizard, but only the most talented are allowed to be recognized as a Magus. A sense of community has never guaranteed competitive courtesy.",
   "image": "../images/heroes/rubick.png",
   "skills": [
    {
@@ -40,7 +40,7 @@
  },
  {
   "name": "PUDGE",
-  "blurb": "Flocked by carrion birds who need him to cut their meals into beak-sized chunks, Pudge the Butcher hones his skills with blades that grow sharper the longer he uses them.",
+  "blurb": "Flocked by carrion birds who need him to cut their meals into beak-sized chunks, Pudge the Butcher hones his skills with blades that grow sharper the longer he uses them. Fresh Meat is his favorite phrase! ",
   "image": "../images/heroes/pudge.png",
   "skills": [
    {
@@ -53,7 +53,7 @@
  },
  {
   "name": "EMBER SPIRIT",
-  "blurb": "Lost within the Wailing Mountains, the Fortress of Flares lay abandoned, its training halls empty, its courtyard covered in leaves and dust. Upon a dais in its sealed temple rests a topaz cauldron filled with ancient ash, remnants of a pyre for the warrior-poet Xin.",
+  "blurb": "Lost within the Mountains, the Fortress of Flares lay abandoned, its halls empty, its courtyard covered in leaves and dust. Upon a dais in its sealed temple rests a topaz cauldron filled with ancient ash, remnants for the warrior-poet Xin.",
   "image": "../images/heroes/ember-spirit.png",
   "skills": [
    {
@@ -67,7 +67,7 @@
 
  {
   "name": "FACELESS VOID",
-  "blurb": "Darkterror the Faceless Void is a visitor from Claszureme, a realm outside of time. Time means nothing to Darkterror, except as a way to thwart his foes and aid his allies. His view of the cosmos has given him a remote, disconnected quality, although in battle he is quite capable of making it personal.",
+  "blurb": "Darkterror the Faceless Void is a visitor from Claszureme, a realm outside of time. Time means nothing to Darkterror, except as a way to thwart his foes and aid his allies. His view of the cosmos has given him a remote, disconnected quality.",
   "image": "../images/heroes/faceless-void.png",
   "skills": [
    {
@@ -81,7 +81,7 @@
 
  {
   "name": "CRYSTAL MAIDEN",
-  "blurb": "Born in a temperate realm, raised with her fiery older sister Lina, Rylai the Crystal Maiden soon found that her innate elemental affinity to ice created trouble for all those around her.",
+  "blurb": "Born in a temperate realm, raised with her fiery older sister Lina, Rylai the Crystal Maiden soon found that her innate elemental affinity to ice created trouble for all those around her. Her sister is Lina Inverse",
   "image": "../images/heroes/crystal-maiden.png",
   "skills": [
    {
@@ -95,7 +95,7 @@
 
  {
   "name": "INVOKER",
-  "blurb": "In his youth, the precocious wizard mastered not four, not five, not even seven incantations: He could command no fewer than ten spells, and cast them instantly.",
+  "blurb": "In his youth, the wizard mastered not four, not five, not even seven incantations: He could command no fewer than ten spells, and cast them instantly.The greatest mages in those days were the ones blessed with the greatest memories.",
   "image": "../images/heroes/invoker.png",
   "skills": [
    {
@@ -109,7 +109,7 @@
 
   {
    "name": "LINA INVERSE",
-   "blurb": "The sibling rivalries between Lina the Slayer, and her younger sister Rylai, the Crystal Maiden, were the stuff of legend in the temperate region where they spent their quarrelsome childhoods together.  Lina's fiery ardor was tempered by cleverness and conniving.",
+   "blurb": "The sibling rivalries between Lina, and her younger sister Rylai, were the stuff of legend in the temperate region where they spent their quarrelsome childhoods together.  Lina's fiery ardor was tempered by cleverness and conniving.",
    "image": "../images/heroes/lina.png",
    "skills": [
     {

@@ -3,12 +3,17 @@
  display:flex;
  justify-content:center;
 
+ @media #{$device-md}{
+  width:80%;
+  margin:0 auto;
+ }
+
  .bar{
   width:70px;
   height:10px;
   background: var(--white);
   border-radius:10px;
-  margin:20px 10px;
+  margin:20px 7px;
   cursor:pointer;
  }
 

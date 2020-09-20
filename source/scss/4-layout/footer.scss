@@ -1,5 +1,42 @@
 // Code footer css here
 footer{
-  background-color:#000;
   color:#fff;
+  margin: 20px 0;
+
+  .footer__social-media-links{
+    display:flex;
+    justify-content:center;
+    align-items: center;
+    margin-top:1rem;
+
+    .social-media{
+      height:2rem;
+      width:2rem;
+      border-radius: 50%;
+      display:inline-block;
+      background:var(--accent);
+      color:var(--white);
+      margin:0 0.5rem;
+      position:relative;
+      transform:scale(1);
+      transition:all 0.2s ease-in-out;
+
+      &:hover{
+        transform:scale(1.2);
+      }
+
+      i{
+        position:absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+      }
+    }
+  }
+
+  .footer-texts{
+    font-size:16px;
+    text-align: center;
+  }
+
 }

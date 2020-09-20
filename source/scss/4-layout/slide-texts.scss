@@ -1,14 +1,22 @@
 .slide-texts__container{
- margin:0 30px;
+ margin:0 25px;
 
  .slide-heading{
-  padding-top:15px;
+  padding-top:10px;
   text-align: center;
   color:#FF0000 !important;
   letter-spacing:2px;
  }
 
  .slide-blurb{
-  padding-top:15px;
+  padding-top:10px;
+  font-size:14px;
+  @media #{$device-md}{
+   font-size:13px;
+  }
+ }
+
+ @media #{$device-md}{
+  margin:0 15px;
  }
 }
