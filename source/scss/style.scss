@@ -20,13 +20,16 @@
 @import '3-framework/wrappers.scss';
 
 @import '4-layout/default-structure';
-@import '4-layout/header';
 @import '4-layout/custom';
-@import '4-layout/nav';
-@import '4-layout/content';
 @import '4-layout/footer';
+@import '4-layout/slide-img';
+@import '4-layout/slide-texts';
+@import '4-layout/slide-skills';
+@import '4-layout/slide';
 
-@import '5-modules/buttons.scss';
+@import '5-modules/dulas.scss';
 
-@import '6-responsive/header.scss';
+@import '6-responsive/slide.scss';
+@import '6-responsive/slide-img.scss';
+@import '6-responsive/slide-texts.scss';
 

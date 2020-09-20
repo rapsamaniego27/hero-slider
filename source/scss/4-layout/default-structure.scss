@@ -6,9 +6,15 @@
 
 #main{
   flex: 1 0 auto;
+  background: var(--accent);
 }
 
+.title{
+  color:var(--yellow);
+  text-align:center;
+  margin: 2vh 0;
+}
 
 footer{
-  flex-shrink: 0;
+ 
 }

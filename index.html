@@ -7,13 +7,13 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
 
-  <meta name="og:title" property="og:title" content="HTML Webpack">
+  <meta name="og:title" property="og:title" content="Hero Slider">
   <meta name="description" content="This is my own boilerplate in making Front End Projects. I'm currently using Laravel Mix and Webpack.">
   <meta property="og:image" content="#">
   <meta property="og:url" content="#">
   
-
-  <title>HTML Starter</title>
+  <link rel="shortcut icon" href="#" />
+  <title>Hero Slider</title>
 
   <!-- Row Styles -->
   <link rel="stylesheet" href="dist/style.min.css">
@@ -21,131 +21,114 @@
 
 <body>
   <div id="wrapper">
-    <header>
-      <!-- Header here -->
-    </header>
     <div id="main">
-      <center style="padding:20px 0 0 0;">
-        <h1 class="mt-1"><i class="fa fa-user"></i> Content here</h1>
-        <h2 class="mt-1"><i class="fa fa-user"></i> Content here</h2>
-        <h3 class="mt-1"><i class="fa fa-user"></i> Content here</h3>
-        <h4 class="mt-1"><i class="fa fa-user"></i> Content here</h4>
-        <h5 class="mt-1"><i class="fa fa-user"></i> Content here</h5>
-        <h6 class="mt-1"><i class="fa fa-user"></i> Content here</h6>
-        <div class="head4">This is heading 4</div>
-        <div class="head3">This is heading 3</div>
-        <div class="head2">This is heading 2</div>
-        <div class="head1">This is heading 1</div>
-      </center>
+      <h1 class="title">HAPPY BIRTHDAY DARWIN!</h1>
 
-      <div class="grid-container container__flex mt-90 mt-xs-20">
-        <div class="col-1 grid-content">
-          <h3>Col 1 </h3>
-          <div class="gut-15">
-            <p>
-              cols Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa nobis obcaecati.
-            </p>
+      <!-- Container -->
+      <div class="slide-container">
+        <!-- The row which will be used to pass in argument -->
+        <div class="slide-row">
+          <!-- The Tracker containing all the slides -->
+          <div class="slide-track">
+      
+            <!-- The Slides -->
+            <div class="slide">
+             <!-- Row Img -->
+             <div class="slide-img__container">
+               <img src="./images/heroes/slark.png" alt="hero" title="hero" class="slide-img">
+             </div>
+             <!-- End Img -->
+
+             <!-- Row Texts -->
+             <div class="slide-texts__container">
+               <h3 class="slide-heading">SLARK</h3>
+
+               <p class="slide-blurb">
+                Pitched into Dark Reef for crimes unknown, Slark spent half a lifetime without kin or kindness, trusting no one,
+                surviving through a combination of stealth and ruthlessness, keeping his thoughts and his plans to himself.
+               </p>
+             </div>
+             <!-- End Texts -->
+
+             <!-- Row Skills -->
+             <div class="slide-skills__container">
+               <img src="./images/skills/slark-skill1.png" alt="skill1" title="skill1" class="skill">
+               <img src="./images/skills/slark-skill2.png" alt="skill1" title="skill1" class="skill">
+               <img src="./images/skills/slark-skill3.png" alt="skill1" title="skill1" class="skill">
+               <img src="./images/skills/slark-skill4.png" alt="skill1" title="skill1" class="skill">
+             </div>
+             <!-- End Skills -->
+            </div>
+
+            <div class="slide">
+              <!-- Row Img -->
+              <div class="slide-img__container">
+                <img src="./images/heroes/rubick.png" alt="hero" title="hero" class="slide-img">
+              </div>
+              <!-- End Img -->
+            
+              <!-- Row Texts -->
+              <div class="slide-texts__container">
+                <h3 class="slide-heading">RUBICK</h3>
+            
+                <p class="slide-blurb">
+                  Pitched into Dark Reef for crimes unknown, Slark spent half a lifetime without kin or kindness, trusting no one,
+                  surviving through a combination of stealth and ruthlessness, keeping his thoughts and his plans to himself.
+                </p>
+              </div>
+              <!-- End Texts -->
+            
+              <!-- Row Skills -->
+              <div class="slide-skills__container">
+                <img src="./images/skills/rubick-skill1.png" alt="skill1" title="skill1" class="skill">
+                <img src="./images/skills/rubick-skill2.png" alt="skill1" title="skill1" class="skill">
+                <img src="./images/skills/rubick-skill3.png" alt="skill1" title="skill1" class="skill">
+                <img src="./images/skills/rubick-skill4.png" alt="skill1" title="skill1" class="skill">
+              </div>
+              <!-- End Skills -->
+            </div>
+
+            <div class="slide">
+              <!-- Row Img -->
+              <div class="slide-img__container">
+                <img src="./images/heroes/puck.png" alt="hero" title="hero" class="slide-img">
+              </div>
+              <!-- End Img -->
+            
+              <!-- Row Texts -->
+              <div class="slide-texts__container">
+                <h3 class="slide-heading">PUCK</h3>
+            
+                <p class="slide-blurb">
+                  Pitched into Dark Reef for crimes unknown, Slark spent half a lifetime without kin or kindness, trusting no one,
+                  surviving through a combination of stealth and ruthlessness, keeping his thoughts and his plans to himself.
+                </p>
+              </div>
+              <!-- End Texts -->
+            
+              <!-- Row Skills -->
+              <div class="slide-skills__container">
+                <img src="./images/skills/puck-skill1.png" alt="skill1" title="skill1" class="skill">
+                <img src="./images/skills/puck-skill2.png" alt="skill1" title="skill1" class="skill">
+                <img src="./images/skills/puck-skill3.png" alt="skill1" title="skill1" class="skill">
+                <img src="./images/skills/puck-skill4.png" alt="skill1" title="skill1" class="skill">
+              </div>
+              <!-- End Skills -->
+            </div>
+      
+          </div>
+      
+          <!-- Slide Controls is definitely 
+           customizable to your own liking-->
+          <div class="slide-controls">
+            <a href="#" id="btnPrev"><i class="fa fa-arrow-left"></i></a>
+            <a href="#" id="btnNext"><i class="fa fa-arrow-right"></i></a>
           </div>
         </div>
-        <div class="col-1 grid-content">
-          <h3>Col 1 </h3>
-          <div class="gut-15">
-            <p>
-              cols Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa nobis obcaecati.
-            </p>
-          </div>
-        </div>
-        <div class="col-2 grid-content">
-          <h3>Col 2 </h3>
-          <div class="gut-15">
-            <p>
-              cols Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa nobis obcaecati.
-            </p>
-          </div>
-        </div>
-        <div class="col-8  grid-content">
-          <h3>Col 8 </h3>
-          <div class="gut-15">
-            <p>
-              cols Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa nobis obcaecati.
-            </p>
-          </div>
-        </div>
+      
       </div>
-
-      <div class="grid__custom mt-1 container__flex">
-        <div class="col-lg2 grid__custom__content">
-          <h3>Col LG 2 </h3>
-          <div class="gut-15">
-            <p>
-              cols Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa nobis obcaecati.
-            </p>
-          </div>
-        </div>
-        <div class="col-lg5 grid__custom__content">
-          <h3>Col LG 5 </h3>
-          <div class="gut-15">
-            <p>
-              cols Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa nobis obcaecati.
-            </p>
-          </div>
-        </div>
-        <div class="col-lg5 grid__custom__content">
-          <h3>Col LG 5 </h3>
-          <div class="gut-15">
-            <p>
-              cols Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa nobis obcaecati.
-            </p>
-          </div>
-        </div>
-      </div>
-
-      <div class="grid__custom mt-1 container__flex">
-        <div class="col-lg3 col-md6 col-sm3 grid__custom__content">
-          <h3>Col LG 3 </h3>
-          <div class="gut-15">
-            <p>
-              cols Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa nobis obcaecati.
-            </p>
-          </div>
-        </div>
-        <div class="col-lg3 col-md6 col-sm3 grid__custom__content">
-          <h3>Col LG 3 </h3>
-          <div class="gut-15">
-            <p>
-              cols Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa nobis obcaecati.
-            </p>
-          </div>
-        </div>
-        <div class="col-lg3 col-md6 col-sm3 grid__custom__content">
-          <h3>Col LG 3 </h3>
-          <div class="gut-15">
-            <p>
-              cols Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa nobis obcaecati.
-            </p>
-          </div>
-        </div>
-        <div class="col-lg3 col-md6 col-sm3 grid__custom__content">
-          <h3>Col LG 3 </h3>
-          <div class="gut-15">
-            <p>
-              cols Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa nobis obcaecati.
-            </p>
-          </div>
-        </div>
-      </div>
-
-
-      <div class="buttons-container m-auto pt-2">
-        <a href="#" class="btn btn-success">Success</a>
-        <a href="#" class="btn btn-danger">Danger</a>
-        <a href="#" class="btn btn-info">Info</a>
-        <a href="#" class="btn btn-warning">Warning</a>
-      </div>
+      
     </div>
-    <footer>
-      footer
-    </footer>
   </div>
 
   <!-- Row Scripts -->

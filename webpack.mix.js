@@ -17,7 +17,5 @@ mix.options({
  
 mix.combine([
     'source/js/classes/*',
-    'source/js/components/*',
-    'source/js/misc/*',
-    'source/js/vendors/*'
+    'source/js/components/*'
 ], 'dist/app.js');
