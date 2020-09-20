@@ -1,0 +1,73 @@
+[
+  {
+   "name" : "SLARK",
+   "blurb" : "Pitched into Dark Reef for crimes unknown, Slark spent half a lifetime without kin or kindness, trusting no one, surviving through a combination of stealth and ruthlessness, keeping his thoughts and his plans to himself. ",
+   "image" : "../images/heroes/slark.png",
+
+   "skills" : [
+    {
+     "first": "../images/skills/slark-skill1.png",
+     "second": "../images/skills/slark-skill2.png",
+     "third": "../images/skills/slark-skill3.png",
+     "ultimate": "../images/skills/slark-skill4.png"
+    }
+   ]
+  },
+  {
+   "name": "RUBICK",
+   "blurb": "Any mage can cast a spell or two, and a few may even study long enough to become a wizard, but only the most talented are allowed to be recognized as a Magus. Yet as with any sorcerers circle, a sense of community has never guaranteed competitive courtesy.",
+   "image": "../images/heroes/rubick.png",
+
+   "skills": [
+    {
+     "first": "../images/skills/rubick-skill1.png",
+     "second": "../images/skills/rubick-skill2.png",
+     "third": "../images/skills/rubick-skill3.png",
+     "ultimate": "../images/skills/rubick-skill4.png"
+    }
+   ]
+  },
+  {
+   "name": "PUCK",
+   "blurb": "While Puck seems at  glance a mischievous, childish character, this quality masks an alien personality. The juvenile form of a Faerie Dragon, a creature that lives for eons, Puck spends countless millennia in its childish form.",
+   "image": "../images/heroes/puck.png",
+
+   "skills": [
+    {
+     "first": "../images/skills/puck-skill1.png",
+     "second": "../images/skills/puck-skill2.png",
+     "third": "../images/skills/puck-skill3.png",
+     "ultimate": "../images/skills/puck-skill4.png"
+    }
+   ]
+  },
+
+  {
+   "name": "PUDGE",
+   "blurb": "Flocked by carrion birds who need him to cut their meals into beak-sized chunks, Pudge the Butcher hones his skills with blades that grow sharper the longer he uses them.",
+   "image": "../images/heroes/pudge.png",
+
+   "skills": [
+    {
+     "first": "../images/skills/pudge-skill1.png",
+     "second": "../images/skills/pudge-skill2.png",
+     "third": "../images/skills/pudge-skill3.png",
+     "ultimate": "../images/skills/pudge-skill4.png"
+    }
+   ]
+  },
+
+  {
+    "name": "EMBER SPIRIT",
+    "blurb": "Lost within the Wailing Mountains, the Fortress of Flares lay abandoned, its training halls empty, its courtyard covered in leaves and dust. Upon a dais in its sealed temple rests a topaz cauldron filled with ancient ash, remnants of a pyre for the warrior-poet Xin.",
+    "image": "../images/heroes/ember-spirit.png",
+    "skills": [
+      {
+        "first": "../images/skills/ember-skill1.png",
+        "second": "../images/skills/ember-skill2.png",
+        "third": "../images/skills/ember-skill3.png",
+        "ultimate": "../images/skills/ember-skill4.png"
+      }
+    ]
+  }
+]

@@ -8,16 +8,21 @@ class Dulas {
    this.slides = Array.from(this.slideTrack.children);
    this.slidesToScroll = slidesToScroll;
    this.controls = controls;
-   this.autoplay = autoplay
+   this.autoplay = autoplay;
    this.counter = (this.slidesToScroll > 1) ? 3 : 1;
+  
 
    /* Automatic runs */
    this.newSlides = this.clone(this.slides, this.slidesToScroll);
+   this.slideIndexes = this.createImportantIndexes(this.newSlides);
+   this.bars = this.createBars(this.slideIndexes.length);
    this.delayArrange(this.newSlides);
    this.setClasses();
    this.bindControls();
    this.autoSlide(this.autoplay);
    this.autoResize();
+   this.bindClickOnBars();
+   console.log(this.slideIndexes);
   } else {
    console.error('No slider passed in');
   }
@@ -86,7 +91,6 @@ class Dulas {
 
  /* For Cloning more than 1 */
  appendClonedSlides(slides, location){
-    console.log(slides);
     slides.forEach((slide, index) => {
       
        // the captured clone in the loop
@@ -122,11 +126,18 @@ class Dulas {
   this.controls.nextEl.addEventListener('click', (e) => {
    e.preventDefault();
    this.counter++;
-     /* this.counter = (this.slidesToScroll > 1) ?
-        this.counter + this.slidesToScroll :
-        this.counter++; */
 
    this.gotoSlide(this.counter);
+
+   /* Refactor this */
+   if(this.inSlideIndex(this.counter)){
+      const activeBar = document.querySelector('.bar--active');
+
+      const indexOfSlideIndex = this.slideIndexes.indexOf(this.counter);
+      
+      activeBar.classList.remove('bar--active');
+      this.bars[indexOfSlideIndex].classList.add('bar--active');
+   }
 
    this.newSlides[this.counter].classList.add('dulas--current');
    this.newSlides[this.counter].previousElementSibling.classList.remove('dulas--current');
@@ -139,6 +150,16 @@ class Dulas {
    e.preventDefault();
    this.counter--;
    this.gotoSlide(this.counter);
+
+   /* Refactor this */
+   if(this.inSlideIndex(this.counter)){
+      const activeBar = document.querySelector('.bar--active');
+
+      const indexOfSlideIndex = this.slideIndexes.indexOf(this.counter);
+      
+      activeBar.classList.remove('bar--active');
+      this.bars[indexOfSlideIndex].classList.add('bar--active');
+   }
 
    this.newSlides[this.counter].classList.add('dulas--current');
    this.newSlides[this.counter].nextElementSibling.classList.remove('dulas--current');
@@ -190,6 +211,14 @@ class Dulas {
       this.gotoSlide(this.counter);
 
       this.slideTrack.style.transition = `none`;
+
+      /* Refactor this */
+      const activeBar = document.querySelector('.bar--active');
+
+      const indexOfSlideIndex = this.slideIndexes.indexOf(this.counter);
+
+      activeBar.classList.remove('bar--active');
+      this.bars[indexOfSlideIndex].classList.add('bar--active');
   }
 
   /* If first cloned slide has the current class is 0 */
@@ -201,7 +230,15 @@ class Dulas {
       firstSlide.classList.remove('dulas--current');
       this.gotoSlide(this.counter);
 
-       this.slideTrack.style.transition = `none`;
+      this.slideTrack.style.transition = `none`;
+
+      /* Refactor this */
+      const activeBar = document.querySelector('.bar--active');
+
+      const indexOfSlideIndex = this.slideIndexes.indexOf(this.counter);
+
+      activeBar.classList.remove('bar--active');
+      this.bars[indexOfSlideIndex].classList.add('bar--active');
   }
  }
 
@@ -246,6 +283,73 @@ class Dulas {
   setTimeout(window.onload = () => {
    this.arrange(slides, this.slidesToScroll);
   }, 10);
+ }
+
+ bindClickOnBars(){
+    
+    this.bars.forEach((bar, index) => {
+       bar.addEventListener('click', ()=> {
+         const activeBar = document.querySelector('.bar--active');
+         const slideIndex = this.slideIndexes[index];
+         this.counter = slideIndex;
+         
+
+         activeBar.classList.remove('bar--active');
+         bar.classList.add('bar--active');
+         
+
+         this.gotoSlide(this.counter);
+       });
+    });
+ }
+
+ createBars(quantity){
+   
+   const parentBar = document.querySelector('.slide-bars');
+   let list = ' ';
+
+   for (let index = 0; index < quantity; index++) {
+      if(index <= 0){
+         list += `<li class="bar bar--active"></li>`;
+      }else{
+         list += `<li class="bar"></li>`;
+      }
+   }
+
+   parentBar.innerHTML = list;
+   const bars = document.querySelectorAll('.bar');
+
+   return bars;
+ }
+
+ createImportantIndexes(slides){
+   let slideIndexes = [];
+
+   slides.forEach((slide, index) => {
+       if (index % 2 == 1) {
+          slideIndexes.push(index);
+       }
+    });
+
+    /* Removes the clones for each sides */
+    slideIndexes.shift();
+    slideIndexes.pop();
+    
+    return slideIndexes;
+    
+ }
+
+ inSlideIndex(counter){
+
+    const existence = this.slideIndexes.some((slideIndex) => slideIndex == counter);
+
+    return existence;
+ }
+
+ /* Refactor Active Bar Class */
+ /* BUG it only works if slides are in even numbers */
+ applyActiveBarClass(){
+    /*  */
  }
 
 }
